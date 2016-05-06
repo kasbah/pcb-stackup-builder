@@ -1,0 +1,18 @@
+{
+  "name": "pcb-stackup-builder",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.0.0-rc.4",
+    "gerber-to-svg": "^1.0.0",
+    "pcb-stackup": "^0.1.0",
+    "shortid": "^2.2.6",
+    "whats-that-gerber": "^1.0.1"
+  }
+}
