@@ -42,7 +42,7 @@ var handleLayers = function(error, layers) {
     return console.error('error mapping gerber file paths to array of converters')
   }
 
-  var stackup = pcbStackup(layers.filter(Boolean), 'my-board')
+  var stackup = pcbStackup(layers.filter(Boolean), {id: 'my-board', maskWithOutline: true})
   fs.writeFileSync('top.svg', stackup.top)
   fs.writeFileSync('bottom.svg', stackup.bottom)
 }
